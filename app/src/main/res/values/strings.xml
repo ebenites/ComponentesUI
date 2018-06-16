@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ComponentesUI</string>
+    <string name="edit_text_description">Generador de usuario</string>
+    <string name="edit_text_firstname_hint">Nombres</string>
+    <string name="edit_text_lastname_hint">Apellidos</string>
+    <string name="edit_text_generate_button">Generar</string>
+    <string name="edit_text_result_message">Ingrese sus datos</string>
+
+    <string-array name="country_list">
+        <item></item>
+        <item>Peru</item>
+        <item>Dinamarca</item>
+        <item>Portugal</item>
+        <item>España</item>
+        <item>Rusia</item>
+    </string-array>
+
+</resources>

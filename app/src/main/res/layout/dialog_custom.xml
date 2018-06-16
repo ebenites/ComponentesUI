@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Información de Contacto"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"/>
+        
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nombres_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/logo_image"
+            android:layout_marginStart="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nombres_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese sus nombre"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/apellidos_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/logo_image"
+            android:layout_below="@+id/nombres_layout"
+            android:layout_marginStart="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/apellidos_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese sus apellidos"/>
+
+        </android.support.design.widget.TextInputLayout>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showAlert"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Guardar información"/>
+
+</LinearLayout>
